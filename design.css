@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(199, 248, 248);
+    color: rgb(8, 1, 1);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-column {
+    flex: 1;
+    max-width: 300px;
+    padding-right: 20px;
+    text-align: center;
+    background: aliceblue;
+    margin-right: 17px;
+    border-radius: 6px;
+}
+.left-column p{
+    background: #3e3e3e;
+    border-radius: 7px;
+    color: #fff;
+    padding: 6px;
+    width: 30%;
+    margin-left: 110px;
+}
+
+.right-column {
+    flex: 2;
+    background: aliceblue;
+    border-radius: 6px;
+}
+.right-column h2{
+    text-align: center;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info a {
+    display: block;
+    color: rgb(45, 233, 101);
+    text-decoration: none;
+    margin: 25px 0;
+    font-size: 20px;
+    
+}
+.contact-info a:hover{
+    color: #ffd700;
+}
+
+.summary {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left: 10px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.service-box {
+    background-color: #3e3e3e;
+    padding: 20px;
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.service-box h3 {
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: 16px;
+}
+.contact-info a{
+display: flex;
+align-items: center;
+color: #0c0101;
+text-decoration: none;
+margin: 2px 0;
+margin-right: 30px;
+margin-left: 13px;
+background-color: rgb(199, 248, 248);
+padding: 6px;
+width: 96%;
+border-radius: 6px;
+}
+.contact-info i{
+    margin-right: 10px;
+    font-size: 24px;
+    background: #0c0101;
+    padding: 6px;
+    border-radius: 6px;
+}
+.contact-info a i.fa-whatsapp{
+color: #25d366;
+}
+.contact-info a i.fa-phone{
+    color: #34b7f1;
+}
+.contact-info a i.fa-envelope{
+    color: #d44638;
+}
+.contact-info a i.fa-file-download{
+    color: #ffd700;
+}
+nav{
+    padding: 30px;
+    background-color: azure;
+    text-align: right;
+}
+nav a:hover{
+    background-color: #164619;
+    color: black;
+}
+nav a{
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    padding: 6px;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+.contact-info a span{
+    background-color: rgb(1, 14, 14);
+}
+.contact-info a:hover span{
+    background-color: #d44638;
+}
+.service-box:hover{
+    transform: translateY(-10px);
+}
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-column, .right-column {
+        max-width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        margin: 10px 0;
+        width: 90%;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* Tablets (min-width: 769px and max-width: 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 15px;
+    }
+
+    .profile-section {
+        flex-wrap: wrap;
+    }
+
+    .left-column, .right-column {
+        max-width: 48%;
+        margin: 1%;
+    }
+
+    .services {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .service-box {
+        flex: 1 1 45%;
+        margin: 10px;
+    }
+}
+
+/* Larger screens (min-width: 1025px) */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .profile-section {
+        flex-wrap: nowrap;
+    }
+
+    .services {
+        justify-content: space-between;
+    }
+
+    .service-box {
+        flex: 1;
+        margin: 0 10px;
+    }
+}
+
